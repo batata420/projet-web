@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+<title>
+        account
+</title>
+<script type="text/javascript"  src="acc.js"></script>
+<link rel="stylesheet" href="acc.css">
+</head>
+<body>
+    <header></header>
+
+
+
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">9oFty.tn</h2>
+        </div>
+
+        <div class="menu">
+            <ul> 
+                
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="Produits.html" target="_blank">PRODUITS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+       
+
+    </div> 
+
+
+
+
+
+    <form name="f" class="form" method="post" onclick="return verif()">
+        <table>
+            <tr>
+                <h2> create account</h2>
+                <td><label>cin</label></td>
+                <td><input type="number" name="cin" required></td>
+            </tr>
+            <tr>
+            <td><label>nom</label></td>
+            <td><input type="text" name="n" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td><label>prenom</label></td>
+                <td><input type="text" name="p" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td><label>email</label></td>
+                <td><input type="email" name="e" required></td>
+            </tr>
+            <tr>
+                <td><label>date de naissance</label></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label>tel</label></td>
+                <td><input type="tel" required></td>
+            </tr>
+            <tr>
+                <td><label>mot de passe</label></td>
+                <td><input type="password" name="mdp" required>
+            </tr>
+            <tr>
+                <td><label>confirmez mot de passe</label></td>
+                <td><input type="password" name="cmdp" required>
+                    
+            </tr>
+            
+        </table>
+        <input class="envoyer" type="submit" value="envoyer" onclick="verif()">
+        <input class="annuler" type="reset"  value="annuler">
+        <p>log in with</p>
+        
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    
+    </form> 
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

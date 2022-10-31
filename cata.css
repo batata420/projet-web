@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: url('1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section{
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+
+.cont{
+    display:flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: aqua;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border:solid grey;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+
+.card-image{
+   background-color: white;
+    height: 320px;
+    margin-bottom: 15px;
+    background-size: cover;
+
+}
+h2,p
+{
+ text-align: center;
+}
+
+.prod-1{
+    background-image: url('cafe.PNG');  
+}
+
+.prod-2{
+    background-image:url('cafe1.PNG')
+}
+
+.prod-3{
+    background-image: url('nescafe.PNG');
+}
+
+.prod-4{
+    background-image: url('cafeglace.PNG');
+}
+
+.prod-5{
+    background-image: url('coca.jpg');
+}
+
+.prod-6{
+    background-image: url('fanta.PNG');
+}
+
+.prod-7{
+    background-image: url('ice\ tea.PNG');
+}
+
+.prod-8{
+    background-image: url('lait3.PNG');
+}
+
+.prod-9{
+    background-image: url('lait1.PNG');
+}
+
+.prod-10{
+    background-image: url('lait2.PNG');
+}
+
+.prod-11{
+    background-image: url('lben.PNG');
+}
+
+.prod-12{
+    background-image: url('jus.PNG');
+}
+
+.prod-13{
+    background-image: url('jus1.PNG');
+}
+
+.prod-14{
+    background-image: url('tropico.PNG');
+}
+
+.prod-15{
+    background-image: url('eau.png');
+}
+
+.prod-16{
+    background-image: url('eau1.png');
+}
+
+.prod-17{
+    background-image: url('nutella.png');
+}
+
+.prod-18{
+    background-image: url('slice.jpg');
+}
+
+.prod-19{
+    background-image: url('chips.PNG');
+}
+
+.prod-20{
+    background-image: url('kaki.PNG');
+}
+
+.prod-21{
+    background-image: url('hrisa.PNG');
+}
+
+.prod-22{
+    background-image: url('hrisa1.PNG');
+}
+
+.prod-23{
+    background-image: url('frommage.PNG');
+}
+
+.prod-24{
+    background-image: url('tomate.PNG');
+}
+
+.prod-25{
+    background-image:url('indomi.jpg');
+}
