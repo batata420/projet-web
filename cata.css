@@ -9,7 +9,7 @@ body{
 }
 
 section{
-    background-color: transparent;
+    background-color: white;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 10px;
@@ -22,10 +22,14 @@ section{
 }
 
 .card{
-    background-color: #ffd900;
+    background-color: aqua;
     width: 220px;
     height: 400px;
     margin: 10px;
+    border: solid grey;
+    border-radius: 5px;
+    border-width: 2px;
+    text-align: center;
 }
 
 
