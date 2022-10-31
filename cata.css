@@ -6,12 +6,10 @@
 
 body{
     background: url('1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 section{
-    background-color: white;
+    background-color: transparent;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 10px;
@@ -24,13 +22,10 @@ section{
 }
 
 .card{
-    background-color: aqua;
+    background-color: #ffd900;
     width: 220px;
     height: 400px;
     margin: 10px;
-    border:solid grey;
-    border-radius: 5px;
-    border-width: 2px;
 }
 
 
@@ -40,10 +35,6 @@ section{
     margin-bottom: 15px;
     background-size: cover;
 
-}
-h2,p
-{
- text-align: center;
 }
 
 .prod-1{
@@ -144,4 +135,8 @@ h2,p
 
 .prod-25{
     background-image:url('indomi.jpg');
+}
+
+.prod-26{
+    background-image: url('chariot.png');
 }

@@ -4,32 +4,34 @@
 <title>
 </title>
 <link rel="stylesheet" href="cata.css">
+<script href="cataa.js"></script>
 </head>
 <body>
+<form  name="f">
 <section class="cont">
     <div class="card">
         <div class="card-image prod-1" ></div>
         <h2>cafe ben yedder</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="cby" value="3.000TND">
+        <input type="checkbox" name="cby" >
     </div>
     <div class="card">
         <div class="card-image prod-2"></div>
         <h2>cafe grand mere</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="cgm" value="23.900TND">
+        <input type="checkbox" name="cgm" >
     </div>
     <div class="card">
         <div class="card-image prod-3"></div>
         <h2>nescafe</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="nes" value="28.500TND">
+        <input type="checkbox" name="nes" >
     </div>
     <div class="card">
         <div class="card-image prod-4" ></div>
         <h2>cafe glace</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="cg" value="9.600TND">
+        <input type="checkbox" name="cg" >
 </div>
 </section>
 <br>
@@ -38,20 +40,20 @@
     <div class="card">
        <div class="card-image prod-5"></div>
             <h2>coca</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="coca" value="1.100TND">
+            <input type="checkbox" name="coca" >
         </div>
     <div class="card">
       <div class="card-image prod-6"></div>
             <h2>fanta</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="fanta" value="1.100TND">
+            <input type="checkbox" name="fanta" >
        </div> 
     <div class="card">
         <div class="card-image prod-7" ></div>
         <h2>ice tea</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="it" value="1.500TND">
+        <input type="checkbox" name="it" >
         
 </div>
 </section>
@@ -60,121 +62,116 @@
     <div class="card">
        <div class="card-image prod-8"></div>
             <h2>lait delice</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="ld" value="1.400TND">
+            <input type="checkbox" name="ld" >
         </div>
     <div class="card">
       <div class="card-image prod-9"></div>
             <h2>lait vitalait</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="lv" value="1.300TND" >
+            <input type="checkbox" name="lv" >
        </div> 
        <div class="card">
         <div class="card-image prod-10" ></div>
         <h2>lait natilait</h2>
-        <p>text</p>
-        <input type="checkbox">
+        <input type="text" name="ln" value="1.350TND">
+        <input type="checkbox" name="ln" >
         </div>
         <div class="card">
             <div class="card-image prod-11"></div>
                  <h2>lben</h2>
-                 <p>text</p>
-                 <input type="checkbox">
+                 <input type="text" name="lben" value="1.360TND">
+                 <input type="checkbox" name="lben" >
         </div> 
 </section>
 <section class="cont">
     <div class="card">
        <div class="card-image prod-12"></div>
             <h2>jus orange</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="jo" value="3.100TND">
+            <input type="checkbox" name="jo" >
     </div>
     <div class="card">
       <div class="card-image prod-13"></div>
             <h2>jus cocktail</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="jc" value="3.090TND">
+            <input type="checkbox" name="jc" >
     </div>
     <div class="card">
         <div class="card-image prod-14"></div>
              <h2>tropico</h2>
-             <p>text</p>
-             <input type="checkbox">
+             <input type="text" name="tr" value="3.100TND">
+             <input type="checkbox" name="tr" >
     </div> 
 </section>
 <section class="cont">
     <div class="card">
        <div class="card-image prod-15"></div>
             <h2>eau</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="e" value="1.000TND">
+            <input type="checkbox" name="e" onclick="commande()">
     </div>
     <div class="card">
       <div class="card-image prod-16"></div>
             <h2>eau 6L</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="eg" value="2.500TND">
+            <input type="checkbox" name="eg" >
     </div>
-    <div class="card">
-        <div class="card-image prod-17"></div>
-             <h2>nutella b-ready</h2>
-             <p>text</p>
-             <input type="checkbox">
-    </div> 
 </section>
 <section class="cont">
     <div class="card">
        <div class="card-image prod-18"></div>
             <h2>cake</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="cake" value="0.600TND">
+            <input type="checkbox" name="cake" >
     </div>
     <div class="card">
       <div class="card-image prod-19"></div>
             <h2>chips</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="chips" value="13.05TND">
+            <input type="checkbox" name="chips" >
     </div>
     <div class="card">
         <div class="card-image prod-20"></div>
              <h2>kaki</h2>
-             <p>text</p>
-             <input type="checkbox">
+             <input type="text" name="kaki" value="7.500TND">
+             <input type="checkbox" name="kaki" >
     </div> 
 </section>
 <section class="cont">
     <div class="card">
        <div class="card-image prod-21"></div>
             <h2>hrissa sicam</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="hs" value="5.420TND">
+            <input type="checkbox" name="hs" >
     </div>
     <div class="card">
       <div class="card-image prod-22"></div>
             <h2>hrissa jouda</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="hj" value="2.250TND">
+            <input type="checkbox" name="hj" >
     </div>
     <div class="card">
         <div class="card-image prod-23"></div>
              <h2>frommage rape</h2>
-             <p>text</p>
-             <input type="checkbox">
+             <input type="text" name="fro" value="27.400TND">
+             <input type="checkbox" name="fro" >
     </div> 
 </section>
 <section class="cont"> 
     <div class="card">
        <div class="card-image prod-24"></div>
             <h2>tomate</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="tomate" value="3.740TND">
+            <input type="checkbox" name="tomate" >
         </div>
     <div class="card">
       <div class="card-image prod-25"></div>
             <h2>indomi</h2>
-            <p>text</p>
-            <input type="checkbox">
+            <input type="text" name="indomi" value="0.800TND">
+            <input type="checkbox" name="indomi" >
        </div> 
 </section>
+</form>
 </body>
 </html>
