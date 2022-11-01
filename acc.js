@@ -1,38 +1,40 @@
+function notalpha(ch)
+{i=0;
+  do
+  {
+    if((ch.charAt(i)>"A" || ch.charAt(i)<"Z") && (ch.charAt(i)>"a" || ch.charAt(i)<"z"))
+    {i++;}
+    else
+    {
+      alert("uniquement des lettres");
+      return false;
+      
+    }
+  }while(i<ch.length);
+}
+
+
+
 function verif()
 {
-ch=f.cin.value;
-if(!(ch.length==8))
- {
-    alert("tappez cin");
-    return false;
- }
-if(!(ch.charAt(0)==0 || ch.charAt(0)==1))
- {
-    alert("verifier cin");
-    return false;
+if(isNaN(f.cin.value) || f.cin.value.length!=8)
+ {alert("saisir un cin valide svp");
+  return false;
  }
 
 nom=f.nom.value;
 pre=f.prenom.value;
-tel=document.getElementById('tel').value;
-  if(!alpha(nom))
+  if(notalpha(nom))
     {
       alert("uniquement lettre dans le nom");
       return false;
     }
 
-    if(!alpha(pre))
+    if(notalpha(pre))
     {
       alert("uniquement lettre dans le prenom");
       return false;
     }
-
-    if(!Number(tel) || tel.length!=8)
-     {
-      alert("tel invalide");
-      return false;
-     }
-
 
 ch=f.mdp.value;
 ch1=f.cmdp.value;
