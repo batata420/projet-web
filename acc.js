@@ -1,48 +1,50 @@
-function notalpha(ch)
-{i=0;
-  do
-  {
-    if((ch.charAt(i)>"A" || ch.charAt(i)<"Z") && (ch.charAt(i)>"a" || ch.charAt(i)<"z"))
-    {i++;}
-    else
-    {
-      alert("uniquement des lettres");
-      return false;
-      
-    }
-  }while(i<ch.length);
+function cin()
+{
+  if(f.cin.value.length!=8)
+   {
+    alert("tappez un cin valide");
+    return false;
+   }
 }
 
+function nom()
+{
+  document.getElementById("n").value=document.getElementById("n").value.replace(/[^a-z]/,"");
+}
 
+function prenom()
+{
+  document.getElementById("p").value=document.getElementById("p").value.replace(/[^a-z]/,"");
+}
+
+function mail()
+{
+    em=document.getElementById("e").value;
+    if(/.com$/.test(em)==false)
+    {
+        alert("mail invalide");
+    }
+}
 
 function verif()
 {
-if(isNaN(f.cin.value) || f.cin.value.length!=8)
- {alert("saisir un cin valide svp");
-  return false;
- }
-
-nom=f.nom.value;
-pre=f.prenom.value;
-  if(notalpha(nom))
+  if(f.cin.value.length!=8)
     {
-      alert("uniquement lettre dans le nom");
+      alert("tappez un cin valide");
       return false;
     }
 
-    if(notalpha(pre))
+  if(isNaN(f.tel.value)||f.tel.value.length!=8)
     {
-      alert("uniquement lettre dans le prenom");
-      return false;
-    }
-
-ch=f.mdp.value;
-ch1=f.cmdp.value;
-if(!(ch==ch1))
- {
-    alert("verifier le mot de passe");
+    alert("tappez un tel valide");
     return false;
- }
+    }
 
-
+  ch=f.mdp.value;
+  ch1=f.cmdp.value;
+  if(ch!=ch1)
+   {
+    alert("mot de passe invalide");
+    return false;
+   }
 }

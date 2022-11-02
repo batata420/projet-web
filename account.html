@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="UTF-8">
 <title>
     9oFty.tn
 </title>
 <link rel="shortcut icon" href="chariot.png">
-<script type="text/javascript"  src="acc.js"></script>
 <link rel="stylesheet" href="acc.css">
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="acc.js"></script>
 </head>
 <body>
-    <header></header>
-
-
-
     <div class="navbar">
         <div class="icon">
             <h2 class="logo">9oFty.tn</h2>
         </div>
-
         <div class="menu">
-            <ul> 
-                
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
+            <ul>   
                 <li><a href="catalogues.html" target="_blank">PRODUITS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#footer" >CONTACT</a></li>
+                <li><a href="index.html" target="_blank">LOGIN</a></li>
+                <li><a href="account.html" target="_blank">REGISTER</a></li>
             </ul>
         </div>
-
+        
        
 
     </div> 
 
-
-
-
-
-    <form name="f" class="form" method="post" action="mailto:9oFty1234@gmail.com" onclick="return verif()">
+    <form name="f" class="form" method="post" action="mailto:9oFty1234@gmail.com" >
         <table>
             <tr>
                 <h2> create account</h2>
                 <td><label>cin</label></td>
-                <td><input type="number" name="cin" required></td>
+                <td><input type="number" name="cin" required ></td>
             </tr>
             <tr>
             <td><label>nom</label></td>
-            <td><input type="text" name="nom" maxlength="30" required></td>
+            <td><input type="text" id="n" maxlength="30" required onkeyup="nom()"></td>
             </tr>
             <tr>
                 <td><label>prenom</label></td>
-                <td><input type="text" name="prenom" maxlength="30" required></td>
+                <td><input type="text" id="p" maxlength="30" required onkeyup="prenom()"></td>
             </tr>
             <tr>
                 <td><label>email</label></td>
-                <td><input type="email" name="e" required></td>
+                <td><input type="email" id="e" required onchange="mail()"></td>
             </tr>
             <tr>
                 <td><label>date de naissance</label></td>
@@ -62,20 +52,20 @@
             </tr>
             <tr>
                 <td><label>tel</label></td>
-                <td><input type="tel" name="tel" required></td>
+                <td><input type="tel" name="tel" required ></td>
             </tr>
             <tr>
                 <td><label>mot de passe</label></td>
-                <td><input type="password" name="mdp" required>
+                <td><input type="password" name="mdp"  required>
             </tr>
             <tr>
                 <td><label>confirmez mot de passe</label></td>
-                <td><input type="password" name="cmdp" required>
+                <td><input type="password" name="cmdp" required >
                     
             </tr>
             
         </table>
-        <input class="envoyer" type="submit" value="envoyer" >
+        <input class="envoyer" type="submit" value="envoyer" onclick="verif()">
         <input class="annuler" type="reset"  value="annuler">
         <p>log in with</p>
         
@@ -84,8 +74,24 @@
         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         <a href="#"><ion-icon name="logo-google"></ion-icon></a>
         <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-    
     </form> 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+<footer id="footer">
+
+    <p class="Fin">Find us on : </p> <br>
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+
+    <br><br> 
+    <div class="num">
+    <p>Contact us</p>
+    <p>+216 33 428 215</p>
+    <p>9oFty1234@gmail.com</p>
+    </div>
+</footer>
 </body>
+
 </html>

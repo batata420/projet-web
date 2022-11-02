@@ -1,10 +1,11 @@
 body{width: 100%;
-    background: url(2.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    
 }
 
 .navbar{ 
@@ -26,7 +27,8 @@ body{width: 100%;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
-    margin-top: 5px
+    margin-top: 5px;
+    
 }
 
 .menu{
@@ -55,7 +57,6 @@ ul li a{
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
-    text-transform: uppercase;
 }
 
 ul li a:hover{
@@ -63,15 +64,21 @@ ul li a:hover{
 }
 
 
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
 h2
 {
     text-align: center;
     color:orange;
 }
-
-
-
-
 
 
 
@@ -100,10 +107,10 @@ label,input {
    {
     text-transform: capitalize;
     width: 500px;
-    height: 100%;
+    height: auto;
     box-shadow: 0px 5px 10px 0px rgb(255, 255, 255);
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
+    position: relative;
     top: 50px; ;
     left: 640px;
     transform: translate(0%,-5%);
@@ -169,7 +176,7 @@ label,input {
 
    
    a ion-icon{
-    color: #fff;
+    color: white;
     font-size: 30px;
     padding-left: 30px;
     padding-top: 5px;
@@ -178,4 +185,30 @@ label,input {
 }
 a ion-icon:hover{
     color: #ffd900;
+}
+
+
+
+footer{
+    
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Fin{
+    color: #ffd900;
+}
+footer a {
+    color: #fff;
+    transition: 0.3s ease;
+    font-size: 30px;
+    margin: 8px;
+
+}
+footer a:hover{
+    color: #ffd900;
+}
+.num{
+  color:white;
 }
