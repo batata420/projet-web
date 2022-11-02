@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
@@ -14,6 +15,56 @@ body{
     width: 100%;
     height: 100vh;
 }
+/*--------------------------------------------------*/
+
+
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ffd900;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ffd900;
+    font-size: 65px
+}
+/*--------------------------------------------------*/
+
 
 .navbar{ 
     width: 1200px;
@@ -92,7 +143,7 @@ ul li a:hover{
 }
 
 .btn{
-    width: 100px;
+    width: auto;
     height: 40px;
     background: #ffd900;
     border: 2px solid #ffd900;
@@ -132,8 +183,8 @@ ul li a:hover{
     height: 380px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: 70px;
-    left: 40%;
+    top: 40px;
+    left: 75%;
     transform: translate(0%,-5%);
     border-radius: 10px;
     padding: 25px;

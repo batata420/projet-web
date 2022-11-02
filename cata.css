@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
+    scroll-behavior: smooth
 }
 
 body{
@@ -97,7 +98,7 @@ ul li a:hover{
 }
 
 .btn,.passer{
-    width: auto;
+    width:  auto;
     height: 40px;
     background: #ffd900;
     border: 2px solid #ffd900;
@@ -108,11 +109,16 @@ ul li a:hover{
     border-bottom-right-radius: 5px;
     transition: 0.2s ease;
     cursor: pointer;
+    
 
 }
 .btn:hover,.passer:hover{
     color: #000;
 }
+
+
+
+
 
 .btn:focus{
     outline: none;
@@ -143,6 +149,7 @@ section{
 .cont{
     display:flex;
     justify-content: center;
+    
 }
 
 .card{
@@ -154,6 +161,8 @@ section{
     border-radius: 5px;
     border-width: 2px;
     text-align: center;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+    transition: 0.2s all ;
 }
 
 
@@ -162,7 +171,13 @@ section{
     height: 320px;
     margin-bottom: 15px;
     background-size: cover;
-
+  
+}
+.card:hover
+{
+    width: 250px;
+    height: 410px;
+    
 }
 
 .prod-1{
@@ -269,6 +284,24 @@ section{
     background-image: url('chariot.png');
 }
 
+
+
+.page, .page a{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    
+} 
+.page a{
+
+    transition: font-size 0.1s ;
+}
+.page a:hover
+{
+    font-size: 30px;
+    
+}
 
 
 input[type=submit]{
