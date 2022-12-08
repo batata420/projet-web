@@ -27,7 +27,7 @@
 
     </div> 
 
-    <form name="f" class="form" method="post" action="mailto:9oFty1234@gmail.com" >
+    <form name="f" class="form" method="post" action="http://127.0.0.1/projet/inscription.php" >
         <table>
             <tr>
                 <h2> create account</h2>
@@ -36,15 +36,15 @@
             </tr>
             <tr>
             <td><label>nom</label></td>
-            <td><input type="text" id="n" maxlength="30" required onkeyup="nom()"></td>
+            <td><input type="text" id="n" name="nom" maxlength="30" required onkeyup="nom()"></td>
             </tr>
             <tr>
                 <td><label>prenom</label></td>
-                <td><input type="text" id="p" maxlength="30" required onkeyup="prenom()"></td>
+                <td><input type="text" id="p" name="pren" maxlength="30" required onkeyup="prenom()"></td>
             </tr>
             <tr>
                 <td><label>email</label></td>
-                <td><input type="email" id="e" required onchange="mail()"></td>
+                <td><input type="email" id="e" name="email" required onchange="mail()"></td>
             </tr>
             <tr>
                 <td><label>date de naissance</label></td>
@@ -65,7 +65,7 @@
             </tr>
             
         </table>
-        <input class="envoyer" type="submit" value="envoyer" onclick="verif()">
+        <input class="envoyer" name="env" type="submit" value="envoyer" onclick="verif()">
         <input class="annuler" type="reset"  value="annuler">
         <p>log in with</p>
         
