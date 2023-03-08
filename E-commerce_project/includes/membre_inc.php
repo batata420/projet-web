@@ -137,7 +137,7 @@ public static function getclient($email,$mdp, $pdo) {
         return $membre;
         
     } else {
-        return die ('donnée invalide verifier le mot de passe ou l adresse email <a href="javascript:history.back()">retouner</a>');;
+        return die ('donnée invalide verifier votre mot de passe ou l adresse email <a href="javascript:history.back()">retouner</a>');;
         
     }
     
