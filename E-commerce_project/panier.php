@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registre</title>
+    <title>Catchy 99</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="shortcut icon" href="images/icon.png" type="images/png "/>
 
 </head>
 <body>
-    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index_connecter.php">Catchy 99</a>
@@ -35,13 +35,72 @@
                   <li><a class="dropdown-item" href="#">3</a></li>
                 </ul>
               </li>
+
+
+
+<!-- partie connecter wala le  ************************** *************************************************-->
+               
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Connexion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="registre.html">Registre</a>
-              </li>
+              <a class="nav-link active" aria-current="page" href="#" >
+                <?php
+                
+
+                session_start();
+                if ($_SESSION['pseudo']!=null)
+                {
+                echo  $_SESSION['pseudo'] ;
+                }
+                else
+
+                $_SESSION['pseudo']=null;
+                ?>
+                </a>
+                
+                </li>
+                
+                
+                </li>
+
+                <li class="nav-item">
+                <?php
+                
+                
+                 if($_SESSION['pseudo']==null)
+                 {
+                  echo '<a class="nav-link active" aria-current="page" href="connexion.html" >Connecter</a>';
+                  echo '<li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="registre.html" >
+                    Registre
+                    </a>';
+                }
+                  else if ($_SESSION['pseudo']!=null)
+                  {
+                    echo'<a class="nav-link active" aria-current="page" name="dec" href="index_connecter.php?logout=true" >deconnecter</a>';
+                      
+                    if (isset($_GET['logout']) && $_GET['logout'] == 'true')
+                  {
+                    $_SESSION['pseudo']=null;;
+                    header ('location:index_connecter.php');
+                    exit();
+                  }
+                  
+                  
+                  }
+                 
+
+
+                 
+                
+                
+                ?>
               
+              
+                
+              </li>
+    
+<!-- partie connecter wala le  ************************** *************************************************-->
+
+
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -50,39 +109,51 @@
           </div>
         </div>
       </nav>  
-<!--end navbar-->
+      
 
-<!--connexion-->
-<div class="p-5">
-    <h1 class="text-center">Connexion</h1> <br>
-    <form name="f" class="form" method="post" action="http://127.0.0.1/E-commerce_project/connexion.php">
+     
+
         
+  <div class="row col-12 mt-4">
+  <?php
+      require_once 'includes/membre_inc.php';
+      require_once 'includes/database_inc.php';
+      require_once 'includes/produit_inc.php';
+      require_once 'includes/panier_inc.php';
+      $db = new Database('localhost', 'site', 'root', '');
+      $db->connect(); 
+       
+      var_dump($_GET);
+      var_dump($_SESSION);
+       ?>
+<!--   here  --->
 
-        <div class="form-group">
-            <label for="exampleInputPassword1">Email</label>
-            <input type="email" name="email" class="form-control" id="exampleInputPassword1" placeholder="Votre email" required>
-          </div> <br>
 
-          
-          <div class="form-group">
-            <label for="exampleInputPassword1">Mot de passe</label>
-            <input type="password" name="mdp" class="form-control" id="exampleInputPassword1" placeholder="Password"  required >
-          </div> <br>
+
+
+
+
+
 
          
+          
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <form method="post">
+  <button type="submit" name="supp" class="btn btn-primary">supprimer panier</button>
+  </form>
+  
 
-
-        <br>
-        <button type="submit" class="btn btn-primary">Connecter</button>
-      </form>
-</div>
-
- 
-<!--footer-->
 <div class="bg-dark text-center p-5 mt-4">
 <p class="text-white">
     Tout les droits reservés 2023
 </p>
+
+
 </div>
 
  </div>

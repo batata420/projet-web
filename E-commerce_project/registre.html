@@ -11,14 +11,14 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">B-shop</a>
+          <a class="navbar-brand" href="index_connecter.php">Catchy 99</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index_connecter.php">Home</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -54,56 +54,60 @@
 
 <form name="f" class="form" method="post" action="http://127.0.0.1/E-commerce_project/inscription.php" >
 
+
+
+  
+
 <div class="p-5">
   <h1 class="text-center">Registre</h1> <br>
     <form>
+
+      
+
         <div class="form-group">
           <label for="exampleInputEmail1">Pseudo</label>
-          <input type="text" name="pseudo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre pseudo">
+          <input type="text" name="pseudo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre pseudo" required>
         </div> <br>
         
         <div class="form-group">
-          <label for="exampleInputPassword1">Mot de passe</label>
-          <input type="password" name="mdp" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div> <br>
-
-
-        <div class="form-group">
           <label for="exampleInputPassword1">Prénom</label>
-          <input type="text" name="prenom" class="form-control" id="exampleInputPassword1" placeholder="Votre prénom">
+          <input type="text" name="prenom" class="form-control" id="exampleInputPassword1" placeholder="Votre prénom" required>
         </div> <br> 
 
         <div class="form-group">
           <label for="exampleInputPassword1">Nom</label>
-          <input type="text" name="nom" class="form-control" id="exampleInputPassword1" placeholder="Votre nom">
+          <input type="text" name="nom" class="form-control" id="exampleInputPassword1" placeholder="Votre nom" required>
+        </div> <br>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mot de passe</label>
+          <input type="password" name="mdp" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
         </div> <br>
 
 
+        
+
         <div class="form-group">
             <label for="exampleInputPassword1">Email</label>
-            <input type="email" name="email" class="form-control" id="exampleInputPassword1" placeholder="Votre email">
+            <input type="email" name="email" class="form-control" id="exampleInputPassword1" placeholder="Votre email" required>
           </div> <br>
 
-          <div class="form-group">
-            <label for="exampleInputPassword1">Civilité</label> <br>
-            <input type="radio"  name="m" > Homme
-            <input type="radio"  name="f" > Femme
-          </div> <br>
+          
           
 
           <div class="form-group">
             <label for="exampleInputPassword1">Ville</label>
-            <input type="text" name="ville" class="form-control"  placeholder="Votre Ville">
+            <input type="text" name="ville" class="form-control"  placeholder="Votre Ville" required>
           </div> <br>
 
           <div class="form-group">
             <label for="exampleInputPassword1">Code postal</label>
-            <input type="text" name="ville" class="form-control"  placeholder="Votre Ville">
+            <input type="text" name="cp" class="form-control"  placeholder="Votre code postal"minlength="5" pattern="[0-9]+" required>
           </div> <br>
 
           <div class="form-group">
             <label for="exampleInputPassword1">Adresse</label> <br>
-            <textarea name="adresse" id="" cols="70" rows="3" placeholder="votre adresse"></textarea>
+            <textarea name="adresse" id="" cols="70" rows="3" placeholder="votre adresse" required></textarea>
           </div> <br>
 
 
