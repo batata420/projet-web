@@ -185,8 +185,8 @@ let handleStart = () => {
 
 let handlePlayerSwitch = () => {
     if (currentPlayer === '<i class="fa-regular fa-face-laugh-squint"></i>') {
-        player1.style.background = '#8458B3'
-        player2.style.background = '#d0bdf4'
+        player1.style.background = '#333333'
+        player2.style.background = '#999999'
     } 
     
     else if (isBotGame===true)// bot iwali yal3ib
@@ -216,8 +216,8 @@ let handlePlayerSwitch = () => {
                 }, 500) 
             }
             else if ( currentPlayer ==='<i class="fa-sharp fa-regular fa-face-surprise"></i>') {
-                player1.style.background = '#d0bdf4'
-                player2.style.background = '#8458B3'
+                player1.style.background = '#999999'
+                player2.style.background = '#333333'
             }
         }
           
@@ -270,7 +270,7 @@ let handlePlayAgain = () => {
     countField.innerHTML = '0'
     statusDisplay.innerHTML = ''
     statusDisplay.style.color = 'black'
-    player1.style.background = player2.style.background = '#d0bdf4'
+    player1.style.background = player2.style.background = '#c2c2c2'
     playField.removeChild(document.getElementById('container'))
     handleStart()
 }
@@ -282,7 +282,7 @@ let handleRestart = () => {
     countField.innerHTML = '0'
     statusDisplay.innerHTML = ''
     statusDisplay.style.color = 'black'
-    player1.style.background = player2.style.background = '#d0bdf4'
+    player1.style.background = player2.style.background = '#c2c2c2'
     player1_name.value = player2_name.value = ''
     player1.innerHTML = player2.innerHTML = '-'
     startBox.className = 'sidebar'

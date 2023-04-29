@@ -14,7 +14,7 @@ main {
 section {
   text-align: center;
   padding: 30px;
-  background: #e5eaf5c0;
+  background: #f7f7f7;
 }
 
 .hidden {
@@ -31,18 +31,20 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .row {
   display: flex;
   flex-direction: row;
 }
+
 .cell {
   font-family: "Finger Paint", sans-serif;
-  color: #232d55;
-  box-shadow: 0 0 0 1px #6e92a3;
-  border: 1px solid #6e92a3;
+  color: #3d3d3d;
+  box-shadow: 0 0 0 1px #999999;
+  border: 1px solid #999999;
   cursor: pointer;
   line-height: 1em;
-  background: #a0d2ebc0;
+  background: #f2f2f2;
 }
 
 .sidebar {
@@ -51,27 +53,34 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar > * {
 
+.sidebar > * {}
+
+#status {
+  flex: 4;
 }
-#status  {flex: 4;}
 
 .button_box {
   box-sizing: border-box;
-  background: #d0bdf4;
+  background: #c2c2c2;
   border-radius: 4px;
   padding: 10px 0;
   margin: 0 0 10px 0;
   border: none;
 }
+
 button:hover {
-  background-color: #8458B3;
+  background-color: #333333;
+  color: white;
 }
 
 #titleTurns {
   font-size: .8em;
+  color: #666666;
 }
+
 #numberTurns {
   font-size: 1.4em;
   margin: 0;
+  color: #333333;
 }
